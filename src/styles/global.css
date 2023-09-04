@@ -1,4 +1,12 @@
 @font-face {
-  font-family: 'Varela';
-  src: url('/fonts/Varela-Regular.ttf') format('truetype');
+  font-family: 'Acumin';
+  src: url('/fonts/Acumin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Daisy';
+  src: url('/fonts/Daisy-Regular.otf');
+}
+@font-face {
+  font-family: 'Dolego';
+  src: url('/fonts/Dolego-Regular.otf');
 }
