@@ -10,7 +10,10 @@ module.exports = {
 				highlight:'#D7F440',
 				black:'#000000',
 				'black-alt':'#1A191D',
-			}
+			},
+      fontFamily:{
+        primary:['Varela', 'sans-serif']
+      }
 		},
 	},
 	plugins: [],

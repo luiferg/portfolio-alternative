@@ -6,18 +6,40 @@ import { Image } from 'astro:assets';
   class='w-full m-4 flex justify-center items-center bg-black-alt bg-opacity-40 backdrop-blur-md'
 >
   <nav
-    class='flex flex-row justify-between items-center w-full max-w-7xl text-secondary border border-secondary rounded-full py-3 px-8 relative'
+    class='flex flex-row justify-between items-center w-full max-w-7xl text-secondary border-2 border-secondary rounded-full py-3 px-8 relative'
   >
-    <select class='bg-transparent'>
-      <option value='en'>English</option>
-      <option value='es'>Español</option>
-    </select>
-    <p class='absolute left-1/2 -translate-x-1/2'>Luis Logo</p>
-    <ul
-      class='flex flex-row justify-center items-center gap-4 md:gap-6 border border-secondary rounded-full py-1 px-4'
+    <div class='border-2 border-secondary rounded-full py-1 px-4'>
+      <select
+        class='bg-black-alt lg:hover:text-primary transition-colors cursor-pointer'
+      >
+        <option value='en'>English</option>
+        <option value='es'>Español</option>
+      </select>
+    </div>
+    <a
+      href='/'
+      class='absolute left-1/2 -translate-x-1/2 text-3xl font-bold lg:hover:text-primary transition-colors'
     >
-      <li><a href='/#about'>About</a></li>
-      <li><a href='/projects'>Contact</a></li>
+      Luis Gomez
+    </a>
+    <ul
+      class='flex flex-row justify-center items-center gap-4 md:gap-6 border-2 border-secondary rounded-full py-1 px-4'
+    >
+      <li>
+        <a href='/projects' class='lg:hover:text-primary transition-colors'
+          >Projects</a
+        >
+      </li>
+      <li>
+        <a href='/#about' class='lg:hover:text-primary transition-colors'
+          >About</a
+        >
+      </li>
+      <li>
+        <a href='/#contact' class='lg:hover:text-primary transition-colors'
+          >Contact</a
+        >
+      </li>
     </ul>
   </nav>
 </header>

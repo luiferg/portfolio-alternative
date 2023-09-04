@@ -1,6 +1,7 @@
 ---
 const { title, description } = Astro.props;
 import Header from '../components/Header.astro';
+import '../styles/global.css';
 ---
 
 <html lang='en'>
@@ -14,7 +15,7 @@ import Header from '../components/Header.astro';
     <title>{title}</title>
   </head>
   <body
-    class='flex flex-col items-center justify-center bg-black-alt text-base text-white'
+    class='flex flex-col items-center justify-center bg-black-alt text-base text-white font-primary'
   >
     <Header />
     <main class='w-full flex flex-col items-center max-w-7xl'>
