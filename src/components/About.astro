@@ -1,16 +1,61 @@
 ---
-
+import { Icon } from 'astro-icon'
 ---
 
-<section class='flex flex-row w-full justify-between items-center'>
-  <h2
-    class='w-1/4 text-2xl lg:text-4xl font-secondary p-6 bg-gradient-to-r from-black-alt to-highlight text-black rounded-r-full text-end'
-  >
-    About me
-  </h2>
-  <p class='w-3/5 text-primary'>
-    A web developer who is always looking for new challenges and opportunities
-    to learn. Someone who loves to work with people and is always looking for
-    ways to improve the team's workflow.
-  </p>
+<section
+  class='flex flex-col lg:flex-row gap-4 lg:gap-8 w-full justify-between items-center'
+>
+  <div class='flex flex-col gap-2 lg:gap-4 lg:w-2/4'>
+    <h2 class='w-fit text-3xl lg:text-6xl font-secondary text-secondary-alt'>
+      About me
+    </h2>
+    <p>
+      Someone passionate about creating and designing lasting and amazing
+      websites over time.
+    </p>
+    <ul class='text-white flex flex-row gap-4 lg:gap-8 items-center'>
+      <li class='lg:hover:scale-95 transition-all duration-300 w-fit h-fit'>
+        <a
+          href='https://luisgomez.dev/English-Resume.pdf'
+          aria-label='Resume'
+          target='_blank'
+          class='p-3 bg-primary rounded-full lg:hover:bg-white font-semibold lg:hover:text-black-alt transition-all duration-300'
+          >Download CV</a
+        >
+      </li>
+      <li>
+        <a
+          href='https://www.linkedin.com/in/luisgomezortiz31/'
+          aria-label='LinkedIn'
+          target='_blank'
+          ><Icon
+            name='mdi:linkedin'
+            height='42'
+            class='lg:hover:text-primary lg:hover:scale-95 transition-all duration-300'
+          /></a
+        >
+      </li>
+      <li>
+        <a href='https://github.com/luiferg' aria-label='GitHub' target='_blank'
+          ><Icon
+            name='mdi:github'
+            height='42'
+            class='lg:hover:text-primary lg:hover:scale-95 transition-all duration-300'
+          /></a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class='lg:w-2/4 flex flex-col justify-between gap-2 lg:gap-4'>
+    <p>
+      My journey through the universe of web development started in 2018,
+      although with intermittency, always driven by the desire to conceive
+      amazing and fully functional websites.
+    </p>
+    <p>
+      I have had the privilege of collaborating with companies that have been
+      true sources of learning and together with professionals with great
+      experience in the field.
+    </p>
+  </div>
 </section>

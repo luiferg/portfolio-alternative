@@ -1,58 +1,18 @@
 ---
-import { Icon } from 'astro-icon'
+
 ---
 
 <section
-  class='rounded-3xl p-10 w-full text-center flex flex-col gap-4 lg:gap-8 items-center lg:py-28'
+  class='rounded-3xl lg:p-10 w-full text-center flex flex-col gap-4 lg:gap-8 items-center lg:py-28'
 >
-  <p class='text-5xl lg:text-[9rem] font-secondary text-primary'>
+  <p class='text-5xl lg:text-[9rem] font-secondary'>
     Hey there!<br />
-     I'm <span class='text-highlight font-bold'>Luis Gomez</span>
+     I'm <span class='text-primary font-bold'>Luis Gomez</span>
   </p>
-  <div class='group w-fit overflow-hidden'>
-    <h1 class='text-2xl lg:text-5xl'>Frontend Web Developer</h1>
-    <div class='invisible lg:visible w-full flex flex-row'>
-      <span
-        class='h-1 w-3/5 block bg-primary from-primary rounded-full lg:group-hover:bg-highlight lg:transition-all lg:group-hover:translate-x-[105%]'
-      ></span>
-      <span
-        class='h-1 w-full block bg-primary from-primary rounded-full lg:group-hover:bg-highlight lg:-translate-x-[105%] lg:transition-all lg:group-hover:translate-x-0'
-      ></span>
-    </div>
+  <div class='w-fit overflow-hidden'>
+    <h1 class='text-2xl lg:text-5xl text-secondary-alt'>
+      Frontend Web Developer
+    </h1>
+    <div class='invisible lg:visible w-full flex flex-row'></div>
   </div>
-  <ul class='text-white flex flex-row gap-4 lg:gap-8'>
-    <li>
-      <a
-        href='https://www.linkedin.com/in/luisgomezortiz31/'
-        aria-label='LinkedIn'
-        target='_blank'
-        ><Icon
-          name='mdi:linkedin'
-          height='42'
-          class='lg:hover:text-primary lg:hover:scale-95 transition-all'
-        /></a
-      >
-    </li>
-    <li>
-      <a href='https://github.com/luiferg' aria-label='GitHub' target='_blank'
-        ><Icon
-          name='mdi:github'
-          height='42'
-          class='lg:hover:text-primary lg:hover:scale-95 transition-all'
-        /></a
-      >
-    </li>
-    <li>
-      <a
-        href='https://luisgomez.dev/English-Resume.pdf'
-        aria-label='Resume'
-        target='_blank'
-        ><Icon
-          name='mdi:file-account'
-          height='42'
-          class='lg:hover:text-primary lg:hover:scale-95 transition-all'
-        /></a
-      >
-    </li>
-  </ul>
 </section>

@@ -1,25 +1,32 @@
 ---
-import { Image } from 'astro:assets'
+import ProjectCard from './ProjectCard.astro'
+import { Icon } from 'astro-icon'
 ---
 
-<section class='w-full'>
-  <h2 class='text-2xl lg:text-4xl font-secondary text-center'>Projects</h2>
-  <div class='flex flex-row w-full justify-start'>
-    <div class='group'>
-      <div
-        class='bg-secondary-alt text-secondary p-6 rounded-3xl transition-all lg:hover:p-5 flex flex-col origin-center'
-      >
-        <h3 class='text-xl lg:2xl font-secondary'>Be-Graphic</h3>
-        <p>An amazing web portfolio for an amazing graphic designer.</p>
-        <Image
-          src='/screenshots/bg-desktop-mockup.webp'
-          alt='Be-Graphic website'
-          width={500}
-          height={500}
-          class={'w-72 h-auto'}
-        />
-      </div>
-    </div>
-    <div></div>
+<section class='w-full flex flex-col gap-4 lg:gap-6'>
+  <h2 class='text-3xl lg:text-6xl font-secondary text-center'>Projects</h2>
+  <div class='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+    <ProjectCard
+      title='Be-Graphic'
+      description='An amazing web portfolio for an amazing graphic designer.'
+      link='https://be-graphic.net/en'
+      image_url='/screenshots/bg-desktop-mockup.webp'
+    >
+      <li><Icon name='mdi:language-typescript' class='w-8' /></li>
+      <li><Icon name='file-icons:nextjs' class='w-8' /></li>
+      <li><Icon name='mdi:language-html5' class='w-8' /></li>
+      <li><Icon name='mdi:tailwind' class='w-8' /></li>
+    </ProjectCard>
+    <ProjectCard
+      title='Full Solution'
+      description='Demo website for a Colombian telecom company who wanted a modern and cleaner page.'
+      link='https://full-solution-telecom.vercel.app/en'
+      image_url='/screenshots/fst-desktop-mockup.webp'
+    >
+      <li><Icon name='mdi:language-typescript' class='w-8' /></li>
+      <li><Icon name='mdi:react' class='w-8' /></li>
+      <li><Icon name='mdi:language-html5' class='w-8' /></li>
+      <li><Icon name='mdi:tailwind' class='w-8' /></li>
+    </ProjectCard>
   </div>
 </section>
