@@ -1,7 +1,7 @@
 ---
-const { title, description } = Astro.props;
-import Header from '../components/Header.astro';
-import '../styles/globals.css';
+const { title, description } = Astro.props
+import Header from '../components/Header.astro'
+import '../styles/globals.css'
 ---
 
 <html lang='en'>
@@ -15,10 +15,10 @@ import '../styles/globals.css';
     <title>{title}</title>
   </head>
   <body
-    class='flex flex-col items-center justify-center bg-black-alt text-base text-white font-primary'
+    class='flex flex-col items-center justify-center bg-black-alt text-base lg:text-lg text-white font-primary'
   >
     <Header />
-    <main class='w-full flex flex-col items-center max-w-7xl'>
+    <main class='w-full flex flex-col items-center max-w-7xl gap-5 lg:gap-10'>
       <slot />
     </main>
   </body>
