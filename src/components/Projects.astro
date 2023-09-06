@@ -5,8 +5,8 @@ import { Icon } from 'astro-icon'
 
 <section id='projects' class='w-full flex flex-col gap-4 lg:gap-6'>
   <h2 class='text-3xl lg:text-6xl font-secondary text-center'>Projects</h2>
-
-  <ProjectCard
+  <div class='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6'>
+    <ProjectCard
     title='Be-Graphic'
     description='An amazing web portfolio for an amazing graphic designer.'
     link='https://be-graphic.net/en'
@@ -17,8 +17,17 @@ import { Icon } from 'astro-icon'
     <li><Icon name='mdi:language-html5' class='w-8' /></li>
     <li><Icon name='mdi:tailwind' class='w-8' /></li>
   </ProjectCard>
-
-  <div class='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6'>
+  <ProjectCard
+    title='Luis Gomez'
+    description='My personal web portfolio, think it looks good? I can make one for you too!'
+    link='https://luisgomez.dev/en'
+    image_url='/screenshots/lg-desktop-mockup.webp'
+  >
+    <li><Icon name='mdi:language-typescript' class='w-8' /></li>
+    <li><Icon name='file-icons:nextjs' class='w-8' /></li>
+    <li><Icon name='mdi:language-html5' class='w-8' /></li>
+    <li><Icon name='mdi:tailwind' class='w-8' /></li>
+  </ProjectCard>
     <ProjectCard
       title='Full Solution'
       description='Demo website for a Colombian telecom company who wanted a modern and cleaner page.'
