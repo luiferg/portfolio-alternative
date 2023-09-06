@@ -1,16 +1,29 @@
 ---
-import ProjectCard from './ProjectCard.astro'
-import { Icon } from 'astro-icon'
+import ProjectCard from './ProjectCard.astro';
+import { Icon } from 'astro-icon';
 ---
 
 <section class='w-full flex flex-col gap-4 lg:gap-6'>
   <h2 class='text-3xl lg:text-6xl font-secondary text-center'>Projects</h2>
-  <div class='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+
+  <ProjectCard
+    title='Be-Graphic'
+    description='An amazing web portfolio for an amazing graphic designer.'
+    link='https://be-graphic.net/en'
+    image_url='/screenshots/bg-desktop-mockup.webp'
+  >
+    <li><Icon name='mdi:language-typescript' class='w-8' /></li>
+    <li><Icon name='file-icons:nextjs' class='w-8' /></li>
+    <li><Icon name='mdi:language-html5' class='w-8' /></li>
+    <li><Icon name='mdi:tailwind' class='w-8' /></li>
+  </ProjectCard>
+
+  <div class='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6'>
     <ProjectCard
-      title='Be-Graphic'
-      description='An amazing web portfolio for an amazing graphic designer.'
-      link='https://be-graphic.net/en'
-      image_url='/screenshots/bg-desktop-mockup.webp'
+      title='Full Solution'
+      description='Demo website for a Colombian telecom company who wanted a modern and cleaner page.'
+      link='https://full-solution-telecom.vercel.app/en'
+      image_url='/screenshots/fst-desktop-mockup.webp'
     >
       <li><Icon name='mdi:language-typescript' class='w-8' /></li>
       <li><Icon name='file-icons:nextjs' class='w-8' /></li>
@@ -18,10 +31,10 @@ import { Icon } from 'astro-icon'
       <li><Icon name='mdi:tailwind' class='w-8' /></li>
     </ProjectCard>
     <ProjectCard
-      title='Full Solution'
-      description='Demo website for a Colombian telecom company who wanted a modern and cleaner page.'
-      link='https://full-solution-telecom.vercel.app/en'
-      image_url='/screenshots/fst-desktop-mockup.webp'
+      title='CarSearch'
+      description='A cool web application to find rental cars, it consumes an API for cars data and another one for cars images.'
+      link='https://car-search.vercel.app/'
+      image_url='/screenshots/cs-desktop-mockup.webp'
     >
       <li><Icon name='mdi:language-typescript' class='w-8' /></li>
       <li><Icon name='mdi:react' class='w-8' /></li>
