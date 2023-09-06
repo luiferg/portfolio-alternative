@@ -13,7 +13,7 @@ const { title, link, date } = Astro.props;
   <u class='list-inside no-underline marker:text-secondary'>
     <slot />
   </u>
-  <p class='self-center'>{date}</p>
+  <p class='self-center font-medium'>{date}</p>
   <Icon
     name='mdi:open-in-new'
     class='w-8 lg:group-hover:text-secondary transition-colors duration-300 self-end'
