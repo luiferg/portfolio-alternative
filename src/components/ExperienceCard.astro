@@ -1,0 +1,21 @@
+---
+import { Icon } from 'astro-icon';
+const { title, link, date } = Astro.props;
+---
+
+<a
+  id={`${title} Card`}
+  href={link}
+  target='_blank'
+  class='group bg-primary text-black-alt p-6 rounded-3xl flex flex-col justify-between origin-center lg:hover:scale-[.98] transition-all duration-300 gap-1 lg:gap-2'
+>
+  <h3 class='text-xl lg:text-2xl font-secondary'>{title}</h3>
+  <u class='list-inside no-underline marker:text-secondary'>
+    <slot />
+  </u>
+  <p class='self-center'>{date}</p>
+  <Icon
+    name='mdi:open-in-new'
+    class='w-8 lg:group-hover:text-secondary transition-colors duration-300 self-end'
+  />
+</a>

@@ -1,0 +1,35 @@
+---
+import ExperienceCard from './ExperienceCard.astro';
+---
+
+<section id='experience' class='w-full flex flex-col gap-4 lg:gap-6'>
+  <h2 class='w-fit text-3xl lg:text-6xl font-secondary text-secondary-alt'>
+    Experience
+  </h2>
+  <div class='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6'>
+    <ExperienceCard
+      title='Full Solution'
+      link='https://full-solution-telecom.vercel.app/en'
+      date='From 2021 to 2023'
+    >
+      <li>
+        Management and leadership in firmware development teams for
+        telecommunications devices.
+      </li>
+      <li>MikroTik devices support.</li>
+      <li>Development and deployment of web pages.</li>
+      <li>Configuration and installation of servers for IPTV on Linux.</li>
+    </ExperienceCard>
+    <ExperienceCard
+      title='Areya ESP'
+      link='https://areyaesp.com/'
+      date='From 2019 to 2021'
+    >
+      <li>
+        Development of Application for route management, payroll and recycling
+        resources.
+      </li>
+      <li>Development of the company's website.</li>
+    </ExperienceCard>
+  </div>
+</section>
